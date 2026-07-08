@@ -7,26 +7,24 @@
   <meta name="description" content="EC Food — comida ecuatoriana auténtica: encebollado, ceviche, bolón, hornado y más. La Costa y la Sierra en un solo lugar.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Karla:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Shrikhand&family=Karla:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%230B0B0D' stroke='%23E8B23A' stroke-width='6'/><text x='50' y='64' font-size='40' font-family='Georgia' font-weight='bold' fill='%23E8B23A' text-anchor='middle'>EC</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='4' y='4' width='92' height='92' rx='22' fill='%23FFCC00' stroke='%231A1208' stroke-width='7'/><text x='50' y='66' font-size='42' font-family='Arial Black' font-weight='900' fill='%231A1208' text-anchor='middle'>EC</text></svg>">
 </head>
 <body>
 
   <!-- ═══════════ NAV ═══════════ -->
   <header class="nav" id="nav">
     <a class="nav__logo" href="#inicio" aria-label="EC Food — inicio">
-      <span class="logo-mark" aria-hidden="true">
-        <svg viewBox="0 0 100 100" width="40" height="40"><circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="4"/><text x="50" y="63" font-size="38" font-family="Fraunces, Georgia, serif" font-weight="700" fill="currentColor" text-anchor="middle">EC</text></svg>
-      </span>
-      <span class="logo-text">EC&nbsp;FOOD<em>sabor ecuatoriano</em></span>
+      <span class="logo-mark" aria-hidden="true">EC</span>
+      <span class="logo-text">EC FOOD<em>¡sabor ecuatoriano!</em></span>
     </a>
     <nav class="nav__links" id="navLinks" aria-label="Navegación principal">
       <a href="#favoritos">Favoritos</a>
       <a href="#menu">Menú</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#visitanos">Visítanos</a>
-      <a class="btn btn--small btn--gold" href="#visitanos">Ordenar ahora</a>
+      <a class="btn btn--rojo" href="#visitanos">¡Ordenar ya!</a>
     </nav>
     <button class="nav__burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span><span></span>
@@ -39,68 +37,83 @@
   <section class="hero" id="inicio" aria-roledescription="carrusel" aria-label="Platos destacados">
     <div class="hero__slides" id="heroSlides">
 
-      <article class="hero__slide is-active">
-        <div class="hero__img"><img src="img/ceviche.jpg" alt="Ceviche de camarón ecuatoriano con chifles" fetchpriority="high"></div>
+      <article class="hero__slide slide--amarillo is-active">
         <div class="hero__content">
-          <p class="hero__kicker">Directo de la Costa</p>
-          <h1 class="hero__title">Ceviche de<br><em>Camarón</em></h1>
+          <p class="hero__kicker">★ Directo de la Costa ★</p>
+          <h1 class="hero__title">CEVICHE DE <span class="fancy">camarón</span></h1>
           <p class="hero__sub">El mar de Ecuador servido frío, con limón bravo, cebolla curtida y chifles crocantes.</p>
           <div class="hero__cta">
-            <a class="btn btn--gold" href="#visitanos">Ordenar ahora</a>
-            <a class="btn btn--ghost" href="#favoritos">Ver favoritos</a>
+            <a class="btn btn--rojo btn--big" href="#visitanos">¡Ordenar ya!</a>
+            <a class="btn btn--borde" href="#favoritos">Ver favoritos</a>
           </div>
+        </div>
+        <div class="hero__img">
+          <img src="img/ceviche.jpg" alt="Ceviche de camarón ecuatoriano con chifles" fetchpriority="high">
+          <span class="hero__sticker">$15.99</span>
         </div>
       </article>
 
-      <article class="hero__slide">
-        <div class="hero__img"><img src="img/encebollado.jpg" alt="Encebollado ecuatoriano humeante" loading="lazy"></div>
+      <article class="hero__slide slide--rojo">
         <div class="hero__content">
-          <p class="hero__kicker">El plato bandera</p>
-          <h2 class="hero__title">Encebollado<br><em>Levantamuertos</em></h2>
+          <p class="hero__kicker">★ El plato bandera ★</p>
+          <h2 class="hero__title">ENCEBOLLADO <span class="fancy">levantamuertos</span></h2>
           <p class="hero__sub">Albacora, yuca suave y cebolla curtida en un caldo que resucita a cualquiera.</p>
           <div class="hero__cta">
-            <a class="btn btn--gold" href="#visitanos">Ordenar ahora</a>
-            <a class="btn btn--ghost" href="#menu">Ver menú</a>
+            <a class="btn btn--amarillo btn--big" href="#visitanos">¡Ordenar ya!</a>
+            <a class="btn btn--borde btn--borde-claro" href="#menu">Ver menú</a>
           </div>
+        </div>
+        <div class="hero__img">
+          <img src="img/encebollado.jpg" alt="Encebollado ecuatoriano humeante" loading="lazy">
+          <span class="hero__sticker">$12.99</span>
         </div>
       </article>
 
-      <article class="hero__slide">
-        <div class="hero__img"><img src="img/bolon.jpg" alt="Bolón de verde con queso y chicharrón" loading="lazy"></div>
+      <article class="hero__slide slide--azul">
         <div class="hero__content">
-          <p class="hero__kicker">Desayuno de campeones</p>
-          <h2 class="hero__title">Bolón<br><em>de Verde</em></h2>
+          <p class="hero__kicker">★ Desayuno de campeones ★</p>
+          <h2 class="hero__title">BOLÓN <span class="fancy">de verde</span></h2>
           <p class="hero__sub">Verde majado con queso y chicharrón, como lo hacía la abuela. Con cafecito pasado.</p>
           <div class="hero__cta">
-            <a class="btn btn--gold" href="#visitanos">Ordenar ahora</a>
-            <a class="btn btn--ghost" href="#menu">Ver menú</a>
+            <a class="btn btn--amarillo btn--big" href="#visitanos">¡Ordenar ya!</a>
+            <a class="btn btn--borde btn--borde-claro" href="#menu">Ver menú</a>
           </div>
+        </div>
+        <div class="hero__img">
+          <img src="img/bolon.jpg" alt="Bolón de verde con queso y chicharrón" loading="lazy">
+          <span class="hero__sticker">$8.99</span>
         </div>
       </article>
 
-      <article class="hero__slide">
-        <div class="hero__img"><img src="img/hornado.jpg" alt="Hornado de chancho tradicional de la sierra" loading="lazy"></div>
+      <article class="hero__slide slide--verde">
         <div class="hero__content">
-          <p class="hero__kicker">Orgullo de la Sierra</p>
-          <h2 class="hero__title">Hornado<br><em>de Chancho</em></h2>
+          <p class="hero__kicker">★ Orgullo de la Sierra ★</p>
+          <h2 class="hero__title">HORNADO <span class="fancy">de chancho</span></h2>
           <p class="hero__sub">Dorado y jugoso, con mote, llapingacho y agrio. La tradición andina completa.</p>
           <div class="hero__cta">
-            <a class="btn btn--gold" href="#visitanos">Ordenar ahora</a>
-            <a class="btn btn--ghost" href="#menu">Ver menú</a>
+            <a class="btn btn--amarillo btn--big" href="#visitanos">¡Ordenar ya!</a>
+            <a class="btn btn--borde btn--borde-claro" href="#menu">Ver menú</a>
           </div>
+        </div>
+        <div class="hero__img">
+          <img src="img/hornado.jpg" alt="Hornado de chancho tradicional de la sierra" loading="lazy">
+          <span class="hero__sticker">$14.99</span>
         </div>
       </article>
 
-      <article class="hero__slide">
-        <div class="hero__img"><img src="img/llapingachos.jpg" alt="Llapingachos con chorizo" loading="lazy"></div>
+      <article class="hero__slide slide--naranja">
         <div class="hero__content">
-          <p class="hero__kicker">Clásico andino</p>
-          <h2 class="hero__title">Llapingachos<br><em>con Chorizo</em></h2>
+          <p class="hero__kicker">★ Clásico andino ★</p>
+          <h2 class="hero__title">LLAPINGACHOS <span class="fancy">con chorizo</span></h2>
           <p class="hero__sub">Tortillas de papa doradas, rellenas de queso, con chorizo, huevo frito y salsa de maní.</p>
           <div class="hero__cta">
-            <a class="btn btn--gold" href="#visitanos">Ordenar ahora</a>
-            <a class="btn btn--ghost" href="#menu">Ver menú</a>
+            <a class="btn btn--rojo btn--big" href="#visitanos">¡Ordenar ya!</a>
+            <a class="btn btn--borde" href="#menu">Ver menú</a>
           </div>
+        </div>
+        <div class="hero__img">
+          <img src="img/llapingachos.jpg" alt="Llapingachos con chorizo" loading="lazy">
+          <span class="hero__sticker">$11.99</span>
         </div>
       </article>
 
@@ -110,36 +123,42 @@
       <div class="hero__progress" id="heroProgress" role="tablist" aria-label="Ir al plato"></div>
       <div class="hero__arrows">
         <button class="hero__arrow" id="heroPrev" aria-label="Plato anterior">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
         </button>
         <button class="hero__arrow" id="heroNext" aria-label="Siguiente plato">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
         </button>
       </div>
     </div>
 
     <div class="hero__counter" aria-hidden="true"><span id="heroNum">01</span><i>/</i><span id="heroTotal">05</span></div>
-    <a class="hero__scroll" href="#marquee" aria-label="Bajar a la siguiente sección"><span></span></a>
   </section>
 
-  <!-- ═══════════ MARQUEE ═══════════ -->
-  <div class="marquee" id="marquee" aria-hidden="true">
+  <!-- ═══════════ MARQUEE DOBLE ═══════════ -->
+  <div class="marquee marquee--amarillo" id="marquee" aria-hidden="true">
     <div class="marquee__track">
-      <span>Encebollado · Ceviche · Bolón · Tigrillo · Hornado · Guatita · Seco de Chivo · Llapingachos · Empanadas de Viento · </span><span>Encebollado · Ceviche · Bolón · Tigrillo · Hornado · Guatita · Seco de Chivo · Llapingachos · Empanadas de Viento · </span>
+      <span>ENCEBOLLADO ★ CEVICHE ★ BOLÓN ★ TIGRILLO ★ HORNADO ★ GUATITA ★ SECO DE CHIVO ★ LLAPINGACHOS ★ EMPANADAS ★ </span><span>ENCEBOLLADO ★ CEVICHE ★ BOLÓN ★ TIGRILLO ★ HORNADO ★ GUATITA ★ SECO DE CHIVO ★ LLAPINGACHOS ★ EMPANADAS ★ </span>
+    </div>
+  </div>
+  <div class="marquee marquee--azul" aria-hidden="true">
+    <div class="marquee__track marquee__track--reverso">
+      <span>¡QUÉ RICO ÑAÑO! ★ COSTA Y SIERRA ★ HECHO AL MOMENTO ★ SAZÓN DE CASA ★ ¡QUÉ RICO ÑAÑO! ★ COSTA Y SIERRA ★ HECHO AL MOMENTO ★ SAZÓN DE CASA ★ </span><span>¡QUÉ RICO ÑAÑO! ★ COSTA Y SIERRA ★ HECHO AL MOMENTO ★ SAZÓN DE CASA ★ ¡QUÉ RICO ÑAÑO! ★ COSTA Y SIERRA ★ HECHO AL MOMENTO ★ SAZÓN DE CASA ★ </span>
     </div>
   </div>
 
   <!-- ═══════════ FAVORITOS (carrusel) ═══════════ -->
   <section class="favs" id="favoritos">
     <div class="section-head reveal">
-      <p class="section-kicker">Los que nunca fallan</p>
-      <h2 class="section-title">Favoritos <em>de la casa</em></h2>
+      <div>
+        <p class="section-kicker">Los que nunca fallan</p>
+        <h2 class="section-title">FAVORITOS <span class="fancy">de la casa</span></h2>
+      </div>
       <div class="favs__nav">
         <button class="carousel-arrow" id="favPrev" aria-label="Desplazar favoritos a la izquierda">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
         </button>
         <button class="carousel-arrow" id="favNext" aria-label="Desplazar favoritos a la derecha">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
         </button>
       </div>
     </div>
@@ -191,32 +210,28 @@
         <p>Tortillas de papa con queso, chorizo y salsa de maní.</p>
       </article>
     </div>
-    <p class="favs__hint">Desliza para ver más →&nbsp;&nbsp;<small>precios referenciales</small></p>
+    <p class="favs__hint">← Desliza para ver más →&nbsp;&nbsp;<small>precios referenciales</small></p>
   </section>
 
   <!-- ═══════════ NOSOTROS ═══════════ -->
   <section class="about" id="nosotros">
-    <div class="about__media reveal">
-      <div class="about__photo about__photo--main"><img src="img/ceviche2.jpg" alt="Ceviche ecuatoriano servido" loading="lazy"></div>
-      <div class="about__photo about__photo--float"><img src="img/empanadas.jpg" alt="Empanadas de viento" loading="lazy"></div>
-      <span class="about__stamp" aria-hidden="true">
-        <svg viewBox="0 0 120 120" width="110" height="110">
-          <defs><path id="circ" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/></defs>
-          <text font-size="13.5" letter-spacing="3" fill="currentColor"><textPath href="#circ">SABOR ECUATORIANO · HECHO CON AMOR ·</textPath></text>
-          <text x="60" y="72" font-size="34" font-family="Fraunces, Georgia, serif" font-weight="700" fill="currentColor" text-anchor="middle">EC</text>
-        </svg>
-      </span>
-    </div>
-    <div class="about__text reveal">
-      <p class="section-kicker">Nuestra historia</p>
-      <h2 class="section-title">La Costa y la Sierra<br><em>en un solo lugar</em></h2>
-      <p>En <strong>EC Food</strong> cocinamos el Ecuador entero: el encebollado que cura lunes, el ceviche que sabe a malecón, el hornado que huele a feria de pueblo. Cada plato se hace al momento, con la sazón de casa y el cariño de siempre.</p>
-      <p>Aquí no hay atajos: verde majado a mano, caldos de horas y ají hecho en piedra. Porque la comida ecuatoriana no se explica — <em>se prueba</em>.</p>
-      <ul class="about__stats">
-        <li><strong data-count="20">0</strong><span>+ platos típicos</span></li>
-        <li><strong data-count="2">0</strong><span>regiones: Costa y Sierra</span></li>
-        <li><strong data-count="100">0</strong><span>% hecho al momento</span></li>
-      </ul>
+    <div class="about__inner">
+      <div class="about__media reveal">
+        <div class="about__photo about__photo--a"><img src="img/ceviche2.jpg" alt="Ceviche ecuatoriano servido" loading="lazy"></div>
+        <div class="about__photo about__photo--b"><img src="img/empanadas.jpg" alt="Empanadas de viento" loading="lazy"></div>
+        <span class="about__badge" aria-hidden="true">100%<em>criollo</em></span>
+      </div>
+      <div class="about__text reveal">
+        <p class="section-kicker">Nuestra historia</p>
+        <h2 class="section-title">LA COSTA Y LA SIERRA <span class="fancy">en un solo lugar</span></h2>
+        <p>En <strong>EC Food</strong> cocinamos el Ecuador entero: el encebollado que cura lunes, el ceviche que sabe a malecón, el hornado que huele a feria de pueblo. Cada plato se hace al momento, con la sazón de casa y el cariño de siempre.</p>
+        <p>Aquí no hay atajos: verde majado a mano, caldos de horas y ají hecho en piedra. Porque la comida ecuatoriana no se explica — <em>se prueba</em>.</p>
+        <ul class="about__stats">
+          <li class="stat stat--amarillo"><strong data-count="20">0</strong><span>+ platos típicos</span></li>
+          <li class="stat stat--azul"><strong data-count="2">0</strong><span>regiones: Costa y Sierra</span></li>
+          <li class="stat stat--rojo"><strong data-count="100">0</strong><span>% hecho al momento</span></li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -224,35 +239,35 @@
   <section class="menu" id="menu">
     <div class="section-head section-head--center reveal">
       <p class="section-kicker">Para toda hora</p>
-      <h2 class="section-title">Nuestro <em>menú</em></h2>
+      <h2 class="section-title">NUESTRO <span class="fancy">menú</span></h2>
     </div>
     <div class="menu__grid">
-      <a class="menu-card menu-card--tall reveal" href="#visitanos">
-        <img src="img/bolon.jpg" alt="Desayunos: bolón de verde" loading="lazy">
+      <a class="menu-card menu-card--amarillo reveal" href="#visitanos">
+        <div class="menu-card__img"><img src="img/bolon.jpg" alt="Desayunos: bolón de verde" loading="lazy"></div>
         <div class="menu-card__body">
           <h3>Desayunos Mañaneros</h3>
           <p>Bolones, tigrillo, empanadas y café pasado</p>
           <span class="menu-card__link">Ordenar →</span>
         </div>
       </a>
-      <a class="menu-card reveal" href="#visitanos">
-        <img src="img/ceviche2.jpg" alt="Del mar: ceviches" loading="lazy">
+      <a class="menu-card menu-card--azul reveal" href="#visitanos">
+        <div class="menu-card__img"><img src="img/ceviche2.jpg" alt="Del mar: ceviches" loading="lazy"></div>
         <div class="menu-card__body">
           <h3>Del Mar</h3>
           <p>Ceviches de camarón, pescado y mixto</p>
           <span class="menu-card__link">Ordenar →</span>
         </div>
       </a>
-      <a class="menu-card reveal" href="#visitanos">
-        <img src="img/encebollado.jpg" alt="Sopas: encebollado" loading="lazy">
+      <a class="menu-card menu-card--rojo reveal" href="#visitanos">
+        <div class="menu-card__img"><img src="img/encebollado.jpg" alt="Sopas: encebollado" loading="lazy"></div>
         <div class="menu-card__body">
           <h3>Sopas que Curan</h3>
           <p>Encebollado, aguado y caldos de casa</p>
           <span class="menu-card__link">Ordenar →</span>
         </div>
       </a>
-      <a class="menu-card menu-card--wide reveal" href="#visitanos">
-        <img src="img/hornado.jpg" alt="De la sierra: hornado" loading="lazy">
+      <a class="menu-card menu-card--verde reveal" href="#visitanos">
+        <div class="menu-card__img"><img src="img/hornado.jpg" alt="De la sierra: hornado" loading="lazy"></div>
         <div class="menu-card__body">
           <h3>De la Sierra</h3>
           <p>Hornado, llapingachos, seco de chivo y guatita</p>
@@ -264,11 +279,12 @@
 
   <!-- ═══════════ TESTIMONIOS ═══════════ -->
   <section class="quotes reveal" aria-label="Opiniones de clientes">
-    <svg class="quotes__mark" viewBox="0 0 24 24" width="54" height="54" fill="currentColor" aria-hidden="true"><path d="M9.6 4C6 6 3.5 9.4 3.5 13.8c0 3.6 2.2 6.2 5.2 6.2 2.6 0 4.6-2 4.6-4.6 0-2.5-1.8-4.4-4.2-4.4-.4 0-1 .1-1.1.2.3-2.2 2.3-4.7 4.3-5.8L9.6 4zm10.7 0c-3.6 2-6.1 5.4-6.1 9.8 0 3.6 2.2 6.2 5.2 6.2 2.6 0 4.6-2 4.6-4.6 0-2.5-1.8-4.4-4.2-4.4-.4 0-1 .1-1.1.2.3-2.2 2.3-4.7 4.3-5.8L20.3 4z"/></svg>
+    <p class="section-kicker">Lo que dice la gente</p>
+    <h2 class="section-title section-title--centro">¡ASÍ SABE <span class="fancy">mi tierra!</span></h2>
     <div class="quotes__slides" id="quoteSlides">
-      <blockquote class="is-active"><p>"El encebollado me hizo llorar de la emoción. Igualito al del malecón de Guayaquil."</p><footer>— María F.</footer></blockquote>
-      <blockquote><p>"Por fin un bolón de verdad: crocante por fuera, lleno de chicharrón por dentro."</p><footer>— Carlos V.</footer></blockquote>
-      <blockquote><p>"El hornado se deshace solo. Mis hijos nacidos aquí ya piden 'mote con todo'."</p><footer>— Gabriela R.</footer></blockquote>
+      <blockquote class="is-active"><p>"El encebollado me hizo llorar de la emoción. Igualito al del malecón de Guayaquil."</p><footer>— María F. ★★★★★</footer></blockquote>
+      <blockquote><p>"Por fin un bolón de verdad: crocante por fuera, lleno de chicharrón por dentro."</p><footer>— Carlos V. ★★★★★</footer></blockquote>
+      <blockquote><p>"El hornado se deshace solo. Mis hijos nacidos aquí ya piden 'mote con todo'."</p><footer>— Gabriela R. ★★★★★</footer></blockquote>
     </div>
     <div class="quotes__dots" id="quoteDots" role="tablist" aria-label="Ir a la opinión"></div>
   </section>
@@ -277,28 +293,34 @@
   <section class="visit" id="visitanos">
     <div class="visit__inner reveal">
       <div class="visit__info">
-        <p class="section-kicker">Te esperamos</p>
-        <h2 class="section-title">Ven con hambre,<br><em>sal con patria</em></h2>
+        <p class="section-kicker section-kicker--claro">Te esperamos</p>
+        <h2 class="section-title">VEN CON HAMBRE, <span class="fancy">sal con patria</span></h2>
         <ul class="visit__details">
           <li>
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <span class="visit__icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </span>
             <div><strong>Dirección</strong><span>Tampa, Florida <em>(por confirmar)</em></span></div>
           </li>
           <li>
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            <span class="visit__icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            </span>
             <div><strong>Horario</strong><span>Mié – Dom · 9:00 am – 8:00 pm</span></div>
           </li>
           <li>
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.5 2.9.7a2 2 0 0 1 1.6 2z"/></svg>
+            <span class="visit__icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.5 2.9.7a2 2 0 0 1 1.6 2z"/></svg>
+            </span>
             <div><strong>Teléfono</strong><span>(813) 555-0123 <em>(demo)</em></span></div>
           </li>
         </ul>
         <div class="visit__cta">
-          <a class="btn btn--whatsapp" href="https://wa.me/18135550123?text=Hola%20EC%20Food%2C%20quiero%20ordenar" target="_blank" rel="noopener">
+          <a class="btn btn--whatsapp btn--big" href="https://wa.me/18135550123?text=Hola%20EC%20Food%2C%20quiero%20ordenar" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 .9-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5-.3.6-.6.8-.4 1.1.6 1.1 1.4 1.9 2.4 2.5.3.2.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.4 0 .1 0 .7-.2 1.3z"/></svg>
             Ordena por WhatsApp
           </a>
-          <a class="btn btn--ghost" href="tel:+18135550123">Llámanos</a>
+          <a class="btn btn--borde btn--borde-claro" href="tel:+18135550123">Llámanos</a>
         </div>
       </div>
       <div class="visit__photo">
@@ -314,10 +336,8 @@
     <div class="footer__flag" aria-hidden="true"><i></i><i></i><i></i></div>
     <div class="footer__inner">
       <a class="nav__logo" href="#inicio" aria-label="EC Food — volver arriba">
-        <span class="logo-mark" aria-hidden="true">
-          <svg viewBox="0 0 100 100" width="36" height="36"><circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="4"/><text x="50" y="63" font-size="38" font-family="Fraunces, Georgia, serif" font-weight="700" fill="currentColor" text-anchor="middle">EC</text></svg>
-        </span>
-        <span class="logo-text">EC&nbsp;FOOD<em>sabor ecuatoriano</em></span>
+        <span class="logo-mark" aria-hidden="true">EC</span>
+        <span class="logo-text">EC FOOD<em>¡sabor ecuatoriano!</em></span>
       </a>
       <p class="footer__note">© 2026 EC Food · Propuesta web por <strong>Rojo Agency</strong></p>
       <p class="footer__credits">Fotografías: Wikimedia Commons (CC BY / CC BY-SA) — Ceibos, Pablo Jarrín, Vapelaez2212, amalavida.tv, Gary Soup, Kevinmero, BryanGuev13, Rinaldo Wurglitsch.</p>
