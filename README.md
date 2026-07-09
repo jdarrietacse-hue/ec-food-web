@@ -1,19 +1,27 @@
-# EC Food — Propuesta Web
+# EC FOOD — Authentic Ecuadorian Coastal Cuisine
 
-Página de propuesta para **EC Food** (comida ecuatoriana), hecha por **Rojo Agency**.
+Sitio web de **EC FOOD** (comida ecuatoriana de la costa), hecho por **Rojo Agency**.
+Diseño v3 con la **marca oficial del cliente**: fondo negro, blanco y tricolor de la bandera (como el logo).
 
-Sitio estático (HTML + CSS + JS puro), listo para Vercel.
+Sitio estático (HTML + CSS + JS puro), en Vercel: **ecfood.vercel.app**
 
 ## Qué tiene
 
-- **Hero slider** a pantalla completa con efecto ken-burns, autoplay (6s), flechas, barras de progreso, swipe táctil y teclado.
-- **Marquee** infinito con los platos.
-- **Carrusel "Favoritos de la casa"**: 9 platos, arrastrable con mouse/dedo + flechas.
-- **Nosotros** con contadores animados y sello giratorio.
-- **Menú** en rejilla bento (4 categorías).
-- **Testimonios** en slider con puntos.
-- **Visítanos** con horario, teléfono y botón de WhatsApp.
-- Respeta `prefers-reduced-motion`, tiene focus visible y alt en todas las fotos.
+- **Hero slider** a pantalla completa: 5 platos estrella en círculo blanco gigante con anillo de color, precio en sticker, autoplay (6s), flechas, barras de progreso tricolor, swipe táctil y teclado.
+- **Doble marquee** (amarillo y azul) con los platos y el lema.
+- **Carrusel "Favoritos"**: 9 platos con franja tricolor, arrastrable + flechas.
+- **Nosotros** con anillo tricolor giratorio y contadores.
+- **Menú** en 4 categorías, **Acompañantes** en círculos, **Bebidas** (Club, Tropical, Manzana, etc.).
+- **Testimonios** en slider y **Visítanos** con WhatsApp.
+- Respeta `prefers-reduced-motion`, focus visible, alt en todas las fotos.
+
+## Marca y fotos
+
+- **Logo oficial**: `img/logo.png` (del Drive del cliente).
+- **TODAS las fotos son del cliente** (estudio, fondo blanco) — carpeta Drive compartida por JD el 2026-07-08.
+  Los originales pesados (1.5GB) están en `img/raw/` (fuera de git).
+- Fuentes: Poppins (Black/ExtraBold) + Karla.
+- Colores: negro #050505 · blanco · amarillo #FFD100 · azul #0A4DA3 · rojo #E8362D.
 
 ## ⚠️ Datos placeholder (cambiar cuando el cliente confirme)
 
@@ -22,30 +30,13 @@ Sitio estático (HTML + CSS + JS puro), listo para Vercel.
 | Dirección | "Tampa, Florida (por confirmar)" | placeholder |
 | Teléfono / WhatsApp | (813) 555-0123 | **demo, número falso** |
 | Horario | Mié–Dom 9am–8pm | placeholder |
-| Precios | $4.50–$15.99 | referenciales |
+| Precios | $3.99–$17.99 | referenciales |
 | Testimonios | 3 citas | demo |
-| Logo | Monograma "EC" generado | provisional — pedir logo real |
-
-> **Nota:** no se encontró presencia web/Instagram de "EC Food" al construir esta propuesta
-> (búsqueda hecha el 2026-07-08). Cuando el cliente pase su Instagram/logo/colores reales,
-> se reemplaza la identidad en minutos.
-
-## Créditos de fotos (Wikimedia Commons)
-
-| Foto | Autor | Licencia |
-|------|-------|----------|
-| encebollado.jpg | Vapelaez2212 | CC BY-SA 4.0 |
-| ceviche.jpg / ceviche2.jpg | Ceibos | CC BY-SA 4.0 |
-| bolon.jpg | Pablo Jarrín | CC BY-SA 4.0 |
-| hornado.jpg | amalavida.tv | CC BY-SA 2.0 |
-| llapingachos.jpg | Gary Soup | CC BY 2.0 |
-| guatita.jpg / seco.jpg | Kevinmero | CC BY-SA 4.0 |
-| empanadas.jpg | BryanGuev13 | CC BY-SA 4.0 |
-| tigrillo.jpg | Rinaldo Wurglitsch | CC BY 2.0 |
+| Nombres de platos | leídos de las fotos | **confirmar con el cliente** (ej. "Encocado", "Pollo Criollo") |
 
 ## Desarrollo
 
 ```bash
-npx serve .          # o cualquier server estático
-npm test             # pruebas Playwright
+npx serve .          # server local
+npm test             # 8 pruebas Playwright
 ```

@@ -17,7 +17,7 @@ function vigilar(page) {
 test("carga sin errores, sin 404 y sin scroll horizontal", async ({ page }) => {
   const errores = vigilar(page);
   await page.goto("/");
-  await expect(page).toHaveTitle(/EC Food/);
+  await expect(page).toHaveTitle(/EC FOOD/i);
   await expect(page.locator(".hero__slide.is-active .hero__title")).toBeVisible();
   await page.waitForLoadState("networkidle");
 

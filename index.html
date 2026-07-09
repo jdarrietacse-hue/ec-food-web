@@ -3,28 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EC Food — Sabor Ecuatoriano de Verdad</title>
-  <meta name="description" content="EC Food — comida ecuatoriana auténtica: encebollado, ceviche, bolón, hornado y más. La Costa y la Sierra en un solo lugar.">
+  <title>EC FOOD — Authentic Ecuadorian Coastal Cuisine</title>
+  <meta name="description" content="EC FOOD — Authentic Ecuadorian Coastal Cuisine. Ceviches, encebollado, guatita y la bandera de la costa ecuatoriana.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Shrikhand&family=Karla:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;0,900;1,800&family=Karla:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='4' y='4' width='92' height='92' rx='22' fill='%23FFCC00' stroke='%231A1208' stroke-width='7'/><text x='50' y='66' font-size='42' font-family='Arial Black' font-weight='900' fill='%231A1208' text-anchor='middle'>EC</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23000'/><rect x='22' y='26' width='56' height='13' fill='%23FFD100'/><rect x='22' y='43' width='56' height='13' fill='%230A4DA3'/><rect x='22' y='60' width='56' height='13' fill='%23E8362D'/></svg>">
 </head>
 <body>
 
   <!-- ═══════════ NAV ═══════════ -->
   <header class="nav" id="nav">
-    <a class="nav__logo" href="#inicio" aria-label="EC Food — inicio">
-      <span class="logo-mark" aria-hidden="true">EC</span>
-      <span class="logo-text">EC FOOD<em>¡sabor ecuatoriano!</em></span>
+    <a class="nav__logo" href="#inicio" aria-label="EC FOOD — inicio">
+      <img class="nav__logoimg" src="img/logo.png" alt="EC FOOD — Authentic Ecuadorian Coastal Cuisine">
     </a>
     <nav class="nav__links" id="navLinks" aria-label="Navegación principal">
       <a href="#favoritos">Favoritos</a>
       <a href="#menu">Menú</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#visitanos">Visítanos</a>
-      <a class="btn btn--rojo" href="#visitanos">¡Ordenar ya!</a>
+      <a class="btn btn--amarillo" href="#visitanos">Ordenar ahora</a>
     </nav>
     <button class="nav__burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span><span></span>
@@ -37,83 +36,83 @@
   <section class="hero" id="inicio" aria-roledescription="carrusel" aria-label="Platos destacados">
     <div class="hero__slides" id="heroSlides">
 
-      <article class="hero__slide slide--amarillo is-active">
+      <article class="hero__slide acc--am is-active">
         <div class="hero__content">
-          <p class="hero__kicker">★ Directo de la Costa ★</p>
-          <h1 class="hero__title">CEVICHE DE <span class="fancy">camarón</span></h1>
-          <p class="hero__sub">El mar de Ecuador servido frío, con limón bravo, cebolla curtida y chifles crocantes.</p>
+          <p class="hero__kicker"><span class="tribars" aria-hidden="true"><i></i><i></i><i></i></span>La especialidad de la casa</p>
+          <h1 class="hero__title">La Bandera<em>costeña</em></h1>
+          <p class="hero__sub">Guatita, ceviche y camarón sobre arroz amarillo: todo el sabor de la costa ecuatoriana en un solo plato.</p>
           <div class="hero__cta">
-            <a class="btn btn--rojo btn--big" href="#visitanos">¡Ordenar ya!</a>
-            <a class="btn btn--borde" href="#favoritos">Ver favoritos</a>
+            <a class="btn btn--amarillo btn--big" href="#visitanos">Ordenar ahora</a>
+            <a class="btn btn--linea" href="#favoritos">Ver favoritos</a>
           </div>
         </div>
         <div class="hero__img">
-          <img src="img/ceviche.jpg" alt="Ceviche de camarón ecuatoriano con chifles" fetchpriority="high">
+          <img src="img/bandera.jpg" alt="La Bandera costeña: guatita, ceviche y camarón con arroz amarillo" fetchpriority="high">
+          <span class="hero__sticker">$16.99</span>
+        </div>
+      </article>
+
+      <article class="hero__slide acc--ro">
+        <div class="hero__content">
+          <p class="hero__kicker"><span class="tribars" aria-hidden="true"><i></i><i></i><i></i></span>Frío, bravo y fresco</p>
+          <h2 class="hero__title">Ceviche<em>de camarón</em></h2>
+          <p class="hero__sub">Camarón jugoso al limón con cebolla curtida y tomate. Como en el malecón, pero cerquita.</p>
+          <div class="hero__cta">
+            <a class="btn btn--amarillo btn--big" href="#visitanos">Ordenar ahora</a>
+            <a class="btn btn--linea" href="#menu">Ver menú</a>
+          </div>
+        </div>
+        <div class="hero__img">
+          <img src="img/ceviche-camaron.jpg" alt="Ceviche de camarón ecuatoriano" loading="lazy">
           <span class="hero__sticker">$15.99</span>
         </div>
       </article>
 
-      <article class="hero__slide slide--rojo">
+      <article class="hero__slide acc--az">
         <div class="hero__content">
-          <p class="hero__kicker">★ El plato bandera ★</p>
-          <h2 class="hero__title">ENCEBOLLADO <span class="fancy">levantamuertos</span></h2>
-          <p class="hero__sub">Albacora, yuca suave y cebolla curtida en un caldo que resucita a cualquiera.</p>
+          <p class="hero__kicker"><span class="tribars" aria-hidden="true"><i></i><i></i><i></i></span>El plato bandera</p>
+          <h2 class="hero__title">Encebollado<em>levantamuertos</em></h2>
+          <p class="hero__sub">El caldo marinero con cebolla encurtida que resucita a cualquiera. Con chifles, pan o maduro.</p>
           <div class="hero__cta">
-            <a class="btn btn--amarillo btn--big" href="#visitanos">¡Ordenar ya!</a>
-            <a class="btn btn--borde btn--borde-claro" href="#menu">Ver menú</a>
+            <a class="btn btn--amarillo btn--big" href="#visitanos">Ordenar ahora</a>
+            <a class="btn btn--linea" href="#menu">Ver menú</a>
           </div>
         </div>
         <div class="hero__img">
-          <img src="img/encebollado.jpg" alt="Encebollado ecuatoriano humeante" loading="lazy">
+          <img src="img/encebollado.jpg" alt="Encebollado ecuatoriano con cebolla encurtida" loading="lazy">
           <span class="hero__sticker">$12.99</span>
         </div>
       </article>
 
-      <article class="hero__slide slide--azul">
+      <article class="hero__slide acc--am">
         <div class="hero__content">
-          <p class="hero__kicker">★ Desayuno de campeones ★</p>
-          <h2 class="hero__title">BOLÓN <span class="fancy">de verde</span></h2>
-          <p class="hero__sub">Verde majado con queso y chicharrón, como lo hacía la abuela. Con cafecito pasado.</p>
+          <p class="hero__kicker"><span class="tribars" aria-hidden="true"><i></i><i></i><i></i></span>La reina del almuerzo</p>
+          <h2 class="hero__title">Guatita<em>criollita</em></h2>
+          <p class="hero__sub">Cremosa, con maní y papa, acompañada de arroz amarillo y maduritos dulces.</p>
           <div class="hero__cta">
-            <a class="btn btn--amarillo btn--big" href="#visitanos">¡Ordenar ya!</a>
-            <a class="btn btn--borde btn--borde-claro" href="#menu">Ver menú</a>
+            <a class="btn btn--amarillo btn--big" href="#visitanos">Ordenar ahora</a>
+            <a class="btn btn--linea" href="#menu">Ver menú</a>
           </div>
         </div>
         <div class="hero__img">
-          <img src="img/bolon.jpg" alt="Bolón de verde con queso y chicharrón" loading="lazy">
-          <span class="hero__sticker">$8.99</span>
+          <img src="img/guatita.jpg" alt="Guatita con arroz amarillo y maduro" loading="lazy">
+          <span class="hero__sticker">$13.99</span>
         </div>
       </article>
 
-      <article class="hero__slide slide--verde">
+      <article class="hero__slide acc--ro">
         <div class="hero__content">
-          <p class="hero__kicker">★ Orgullo de la Sierra ★</p>
-          <h2 class="hero__title">HORNADO <span class="fancy">de chancho</span></h2>
-          <p class="hero__sub">Dorado y jugoso, con mote, llapingacho y agrio. La tradición andina completa.</p>
+          <p class="hero__kicker"><span class="tribars" aria-hidden="true"><i></i><i></i><i></i></span>Lo mejor de dos mares</p>
+          <h2 class="hero__title">Ceviche<em>mixto</em></h2>
+          <p class="hero__sub">Pescado y camarón curtidos en limón con la sazón criolla de la casa. Pídelo con chifles.</p>
           <div class="hero__cta">
-            <a class="btn btn--amarillo btn--big" href="#visitanos">¡Ordenar ya!</a>
-            <a class="btn btn--borde btn--borde-claro" href="#menu">Ver menú</a>
+            <a class="btn btn--amarillo btn--big" href="#visitanos">Ordenar ahora</a>
+            <a class="btn btn--linea" href="#menu">Ver menú</a>
           </div>
         </div>
         <div class="hero__img">
-          <img src="img/hornado.jpg" alt="Hornado de chancho tradicional de la sierra" loading="lazy">
-          <span class="hero__sticker">$14.99</span>
-        </div>
-      </article>
-
-      <article class="hero__slide slide--naranja">
-        <div class="hero__content">
-          <p class="hero__kicker">★ Clásico andino ★</p>
-          <h2 class="hero__title">LLAPINGACHOS <span class="fancy">con chorizo</span></h2>
-          <p class="hero__sub">Tortillas de papa doradas, rellenas de queso, con chorizo, huevo frito y salsa de maní.</p>
-          <div class="hero__cta">
-            <a class="btn btn--rojo btn--big" href="#visitanos">¡Ordenar ya!</a>
-            <a class="btn btn--borde" href="#menu">Ver menú</a>
-          </div>
-        </div>
-        <div class="hero__img">
-          <img src="img/llapingachos.jpg" alt="Llapingachos con chorizo" loading="lazy">
-          <span class="hero__sticker">$11.99</span>
+          <img src="img/ceviche-mixto.jpg" alt="Ceviche mixto de pescado y camarón" loading="lazy">
+          <span class="hero__sticker">$17.99</span>
         </div>
       </article>
 
@@ -134,15 +133,15 @@
     <div class="hero__counter" aria-hidden="true"><span id="heroNum">01</span><i>/</i><span id="heroTotal">05</span></div>
   </section>
 
-  <!-- ═══════════ MARQUEE DOBLE ═══════════ -->
-  <div class="marquee marquee--amarillo" id="marquee" aria-hidden="true">
+  <!-- ═══════════ MARQUEES ═══════════ -->
+  <div class="marquee marquee--am" id="marquee" aria-hidden="true">
     <div class="marquee__track">
-      <span>ENCEBOLLADO ★ CEVICHE ★ BOLÓN ★ TIGRILLO ★ HORNADO ★ GUATITA ★ SECO DE CHIVO ★ LLAPINGACHOS ★ EMPANADAS ★ </span><span>ENCEBOLLADO ★ CEVICHE ★ BOLÓN ★ TIGRILLO ★ HORNADO ★ GUATITA ★ SECO DE CHIVO ★ LLAPINGACHOS ★ EMPANADAS ★ </span>
+      <span>ENCEBOLLADO ★ CEVICHE ★ GUATITA ★ BANDERA ★ ENCOCADO ★ CHIFLES ★ MADURO ★ ENCEBOLLADO ★ CEVICHE ★ GUATITA ★ BANDERA ★ ENCOCADO ★ CHIFLES ★ MADURO ★ </span><span>ENCEBOLLADO ★ CEVICHE ★ GUATITA ★ BANDERA ★ ENCOCADO ★ CHIFLES ★ MADURO ★ ENCEBOLLADO ★ CEVICHE ★ GUATITA ★ BANDERA ★ ENCOCADO ★ CHIFLES ★ MADURO ★ </span>
     </div>
   </div>
-  <div class="marquee marquee--azul" aria-hidden="true">
+  <div class="marquee marquee--az" aria-hidden="true">
     <div class="marquee__track marquee__track--reverso">
-      <span>¡QUÉ RICO ÑAÑO! ★ COSTA Y SIERRA ★ HECHO AL MOMENTO ★ SAZÓN DE CASA ★ ¡QUÉ RICO ÑAÑO! ★ COSTA Y SIERRA ★ HECHO AL MOMENTO ★ SAZÓN DE CASA ★ </span><span>¡QUÉ RICO ÑAÑO! ★ COSTA Y SIERRA ★ HECHO AL MOMENTO ★ SAZÓN DE CASA ★ ¡QUÉ RICO ÑAÑO! ★ COSTA Y SIERRA ★ HECHO AL MOMENTO ★ SAZÓN DE CASA ★ </span>
+      <span>AUTHENTIC ECUADORIAN COASTAL CUISINE ★ SABOR DE LA COSTA ★ HECHO AL MOMENTO ★ AUTHENTIC ECUADORIAN COASTAL CUISINE ★ SABOR DE LA COSTA ★ HECHO AL MOMENTO ★ </span><span>AUTHENTIC ECUADORIAN COASTAL CUISINE ★ SABOR DE LA COSTA ★ HECHO AL MOMENTO ★ AUTHENTIC ECUADORIAN COASTAL CUISINE ★ SABOR DE LA COSTA ★ HECHO AL MOMENTO ★ </span>
     </div>
   </div>
 
@@ -150,8 +149,8 @@
   <section class="favs" id="favoritos">
     <div class="section-head reveal">
       <div>
-        <p class="section-kicker">Los que nunca fallan</p>
-        <h2 class="section-title">FAVORITOS <span class="fancy">de la casa</span></h2>
+        <p class="section-kicker"><span class="tribars" aria-hidden="true"><i></i><i></i><i></i></span>Los que nunca fallan</p>
+        <h2 class="section-title">Favoritos <em>de la casa</em></h2>
       </div>
       <div class="favs__nav">
         <button class="carousel-arrow" id="favPrev" aria-label="Desplazar favoritos a la izquierda">
@@ -165,49 +164,58 @@
 
     <div class="favs__viewport" id="favTrack" tabindex="0" aria-label="Carrusel de platos favoritos — desliza para ver más">
       <article class="fav-card">
+        <span class="fav-card__stripe" aria-hidden="true"></span>
+        <div class="fav-card__img"><img src="img/bandera.jpg" alt="La Bandera costeña" loading="lazy"><span class="fav-card__price">$16.99</span></div>
+        <h3>La Bandera</h3>
+        <p>Guatita, ceviche y camarón con arroz amarillo.</p>
+      </article>
+      <article class="fav-card">
+        <span class="fav-card__stripe" aria-hidden="true"></span>
         <div class="fav-card__img"><img src="img/encebollado.jpg" alt="Encebollado" loading="lazy"><span class="fav-card__price">$12.99</span></div>
         <h3>Encebollado</h3>
-        <p>Albacora, yuca y cebolla curtida. Con chifles o pan.</p>
+        <p>Caldo marinero con cebolla encurtida. El levantamuertos.</p>
       </article>
       <article class="fav-card">
-        <div class="fav-card__img"><img src="img/ceviche.jpg" alt="Ceviche de camarón" loading="lazy"><span class="fav-card__price">$15.99</span></div>
+        <span class="fav-card__stripe" aria-hidden="true"></span>
+        <div class="fav-card__img"><img src="img/ceviche-camaron.jpg" alt="Ceviche de camarón" loading="lazy"><span class="fav-card__price">$15.99</span></div>
         <h3>Ceviche de Camarón</h3>
-        <p>Camarón fresco al limón con salsa rosada criolla.</p>
+        <p>Camarón al limón con cebolla curtida y tomate.</p>
       </article>
       <article class="fav-card">
-        <div class="fav-card__img"><img src="img/bolon.jpg" alt="Bolón de verde" loading="lazy"><span class="fav-card__price">$8.99</span></div>
-        <h3>Bolón Mixto</h3>
-        <p>Queso y chicharrón en verde majado a mano.</p>
+        <span class="fav-card__stripe" aria-hidden="true"></span>
+        <div class="fav-card__img"><img src="img/ceviche-pescado.jpg" alt="Ceviche de pescado" loading="lazy"><span class="fav-card__price">$13.99</span></div>
+        <h3>Ceviche de Pescado</h3>
+        <p>Pescado fresco curtido en limón, estilo costeño.</p>
       </article>
       <article class="fav-card">
-        <div class="fav-card__img"><img src="img/tigrillo.jpg" alt="Tigrillo" loading="lazy"><span class="fav-card__price">$10.99</span></div>
-        <h3>Tigrillo</h3>
-        <p>Verde majado con huevo y queso. Sabor de Zaruma.</p>
-      </article>
-      <article class="fav-card">
-        <div class="fav-card__img"><img src="img/guatita.jpg" alt="Guatita" loading="lazy"><span class="fav-card__price">$12.99</span></div>
+        <span class="fav-card__stripe" aria-hidden="true"></span>
+        <div class="fav-card__img"><img src="img/guatita.jpg" alt="Guatita" loading="lazy"><span class="fav-card__price">$13.99</span></div>
         <h3>Guatita</h3>
         <p>Cremosa, con maní y papa. La reina del almuerzo.</p>
       </article>
       <article class="fav-card">
-        <div class="fav-card__img"><img src="img/seco.jpg" alt="Seco de chivo" loading="lazy"><span class="fav-card__price">$14.99</span></div>
-        <h3>Seco de Chivo</h3>
-        <p>Guiso profundo con arroz amarillo y maduro frito.</p>
+        <span class="fav-card__stripe" aria-hidden="true"></span>
+        <div class="fav-card__img"><img src="img/ceviche-mani.jpg" alt="Ceviche con salsa de maní" loading="lazy"><span class="fav-card__price">$16.99</span></div>
+        <h3>Ceviche con Maní</h3>
+        <p>El toque manaba: curtido criollo y salsa de maní.</p>
       </article>
       <article class="fav-card">
-        <div class="fav-card__img"><img src="img/hornado.jpg" alt="Hornado" loading="lazy"><span class="fav-card__price">$14.99</span></div>
-        <h3>Hornado</h3>
-        <p>Chancho dorado con mote, tortilla y agrio serrano.</p>
+        <span class="fav-card__stripe" aria-hidden="true"></span>
+        <div class="fav-card__img"><img src="img/seco-pollo.jpg" alt="Pollo criollo con arroz" loading="lazy"><span class="fav-card__price">$12.99</span></div>
+        <h3>Pollo Criollo</h3>
+        <p>Pollo guisado en salsa criolla con arroz y maduro.</p>
       </article>
       <article class="fav-card">
-        <div class="fav-card__img"><img src="img/empanadas.jpg" alt="Empanadas de viento" loading="lazy"><span class="fav-card__price">$4.50</span></div>
-        <h3>Empanadas de Viento</h3>
-        <p>Infladas, crujientes y con azúcar por encima.</p>
+        <span class="fav-card__stripe" aria-hidden="true"></span>
+        <div class="fav-card__img"><img src="img/encocado.jpg" alt="Encocado" loading="lazy"><span class="fav-card__price">$14.99</span></div>
+        <h3>Encocado</h3>
+        <p>Del norte de la costa: guiso al coco con sabor a Esmeraldas.</p>
       </article>
       <article class="fav-card">
-        <div class="fav-card__img"><img src="img/llapingachos.jpg" alt="Llapingachos" loading="lazy"><span class="fav-card__price">$11.99</span></div>
-        <h3>Llapingachos</h3>
-        <p>Tortillas de papa con queso, chorizo y salsa de maní.</p>
+        <span class="fav-card__stripe" aria-hidden="true"></span>
+        <div class="fav-card__img"><img src="img/chifles.jpg" alt="Chifles" loading="lazy"><span class="fav-card__price">$3.99</span></div>
+        <h3>Chifles</h3>
+        <p>Verde en láminas, crocante y dorado. Para picar o acompañar.</p>
       </article>
     </div>
     <p class="favs__hint">← Desliza para ver más →&nbsp;&nbsp;<small>precios referenciales</small></p>
@@ -217,74 +225,109 @@
   <section class="about" id="nosotros">
     <div class="about__inner">
       <div class="about__media reveal">
-        <div class="about__photo about__photo--a"><img src="img/ceviche2.jpg" alt="Ceviche ecuatoriano servido" loading="lazy"></div>
-        <div class="about__photo about__photo--b"><img src="img/empanadas.jpg" alt="Empanadas de viento" loading="lazy"></div>
-        <span class="about__badge" aria-hidden="true">100%<em>criollo</em></span>
+        <div class="about__circle">
+          <img src="img/guatita-arroz.jpg" alt="Guatita con arroz amarillo de EC FOOD" loading="lazy">
+        </div>
+        <span class="about__badge" aria-hidden="true">100%<em>costeño</em></span>
       </div>
       <div class="about__text reveal">
-        <p class="section-kicker">Nuestra historia</p>
-        <h2 class="section-title">LA COSTA Y LA SIERRA <span class="fancy">en un solo lugar</span></h2>
-        <p>En <strong>EC Food</strong> cocinamos el Ecuador entero: el encebollado que cura lunes, el ceviche que sabe a malecón, el hornado que huele a feria de pueblo. Cada plato se hace al momento, con la sazón de casa y el cariño de siempre.</p>
-        <p>Aquí no hay atajos: verde majado a mano, caldos de horas y ají hecho en piedra. Porque la comida ecuatoriana no se explica — <em>se prueba</em>.</p>
+        <p class="section-kicker"><span class="tribars" aria-hidden="true"><i></i><i></i><i></i></span>Nuestra historia</p>
+        <h2 class="section-title">La costa del Ecuador,<br><em>servida en tu mesa</em></h2>
+        <p>En <strong>EC FOOD</strong> cocinamos la costa ecuatoriana entera: el encebollado que cura lunes, el ceviche que sabe a malecón y la guatita que abraza como almuerzo de casa.</p>
+        <p>Aquí no hay atajos: curtido de verdad, caldos de horas y salsa de maní hecha en casa. Porque la comida de la costa no se explica — <em>se prueba</em>.</p>
         <ul class="about__stats">
-          <li class="stat stat--amarillo"><strong data-count="20">0</strong><span>+ platos típicos</span></li>
-          <li class="stat stat--azul"><strong data-count="2">0</strong><span>regiones: Costa y Sierra</span></li>
-          <li class="stat stat--rojo"><strong data-count="100">0</strong><span>% hecho al momento</span></li>
+          <li class="stat"><strong data-count="20">0</strong><span>+ platos costeños</span></li>
+          <li class="stat"><strong data-count="5">0</strong><span>ceviches distintos</span></li>
+          <li class="stat"><strong data-count="100">0</strong><span>% hecho al momento</span></li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════ MENÚ (bento) ═══════════ -->
+  <!-- ═══════════ MENÚ (categorías) ═══════════ -->
   <section class="menu" id="menu">
     <div class="section-head section-head--center reveal">
-      <p class="section-kicker">Para toda hora</p>
-      <h2 class="section-title">NUESTRO <span class="fancy">menú</span></h2>
+      <p class="section-kicker"><span class="tribars" aria-hidden="true"><i></i><i></i><i></i></span>Para toda hora</p>
+      <h2 class="section-title">Nuestro <em>menú</em></h2>
     </div>
     <div class="menu__grid">
-      <a class="menu-card menu-card--amarillo reveal" href="#visitanos">
-        <div class="menu-card__img"><img src="img/bolon.jpg" alt="Desayunos: bolón de verde" loading="lazy"></div>
+      <a class="menu-card menu-card--am reveal" href="#visitanos">
+        <div class="menu-card__img"><img src="img/ceviche-mani.jpg" alt="Ceviches" loading="lazy"></div>
         <div class="menu-card__body">
-          <h3>Desayunos Mañaneros</h3>
-          <p>Bolones, tigrillo, empanadas y café pasado</p>
+          <h3>Ceviches</h3>
+          <p>Camarón, pescado, mixto y con maní</p>
           <span class="menu-card__link">Ordenar →</span>
         </div>
       </a>
-      <a class="menu-card menu-card--azul reveal" href="#visitanos">
-        <div class="menu-card__img"><img src="img/ceviche2.jpg" alt="Del mar: ceviches" loading="lazy"></div>
-        <div class="menu-card__body">
-          <h3>Del Mar</h3>
-          <p>Ceviches de camarón, pescado y mixto</p>
-          <span class="menu-card__link">Ordenar →</span>
-        </div>
-      </a>
-      <a class="menu-card menu-card--rojo reveal" href="#visitanos">
-        <div class="menu-card__img"><img src="img/encebollado.jpg" alt="Sopas: encebollado" loading="lazy"></div>
+      <a class="menu-card menu-card--az reveal" href="#visitanos">
+        <div class="menu-card__img"><img src="img/encebollado.jpg" alt="Sopas de la costa" loading="lazy"></div>
         <div class="menu-card__body">
           <h3>Sopas que Curan</h3>
-          <p>Encebollado, aguado y caldos de casa</p>
+          <p>Encebollado y caldos marineros de casa</p>
           <span class="menu-card__link">Ordenar →</span>
         </div>
       </a>
-      <a class="menu-card menu-card--verde reveal" href="#visitanos">
-        <div class="menu-card__img"><img src="img/hornado.jpg" alt="De la sierra: hornado" loading="lazy"></div>
+      <a class="menu-card menu-card--ro reveal" href="#visitanos">
+        <div class="menu-card__img"><img src="img/seco-pollo.jpg" alt="Platos fuertes" loading="lazy"></div>
         <div class="menu-card__body">
-          <h3>De la Sierra</h3>
-          <p>Hornado, llapingachos, seco de chivo y guatita</p>
+          <h3>Platos Fuertes</h3>
+          <p>Guatita, encocado, pollo criollo y la Bandera</p>
+          <span class="menu-card__link">Ordenar →</span>
+        </div>
+      </a>
+      <a class="menu-card menu-card--bl reveal" href="#visitanos">
+        <div class="menu-card__img"><img src="img/chifles.jpg" alt="Para picar" loading="lazy"></div>
+        <div class="menu-card__body">
+          <h3>Para Picar</h3>
+          <p>Chifles, maduro frito y acompañantes</p>
           <span class="menu-card__link">Ordenar →</span>
         </div>
       </a>
     </div>
   </section>
 
+  <!-- ═══════════ ACOMPAÑANTES ═══════════ -->
+  <section class="sides reveal" aria-label="Acompañantes">
+    <div class="section-head section-head--center">
+      <p class="section-kicker"><span class="tribars" aria-hidden="true"><i></i><i></i><i></i></span>Complementa tu plato</p>
+      <h2 class="section-title">Acompañantes <em>criollos</em></h2>
+    </div>
+    <ul class="sides__grid">
+      <li><span class="sides__ball"><img src="img/maduro.jpg" alt="Maduro frito" loading="lazy"></span><strong>Maduro Frito</strong></li>
+      <li><span class="sides__ball"><img src="img/arroz.jpg" alt="Arroz amarillo" loading="lazy"></span><strong>Arroz Amarillo</strong></li>
+      <li><span class="sides__ball"><img src="img/aguacate.jpg" alt="Aguacate" loading="lazy"></span><strong>Aguacate</strong></li>
+      <li><span class="sides__ball"><img src="img/salsa-mani.jpg" alt="Salsa de maní" loading="lazy"></span><strong>Salsa de Maní</strong></li>
+      <li><span class="sides__ball"><img src="img/curtido.jpg" alt="Curtido criollo" loading="lazy"></span><strong>Curtido Criollo</strong></li>
+      <li><span class="sides__ball"><img src="img/pan.jpg" alt="Pan" loading="lazy"></span><strong>Pan de Casa</strong></li>
+    </ul>
+  </section>
+
+  <!-- ═══════════ BEBIDAS ═══════════ -->
+  <section class="drinks reveal" aria-label="Bebidas">
+    <div class="section-head section-head--center">
+      <p class="section-kicker"><span class="tribars" aria-hidden="true"><i></i><i></i><i></i></span>Para bajar el almuerzo</p>
+      <h2 class="section-title">Bebidas <em>bien frías</em></h2>
+    </div>
+    <ul class="drinks__row">
+      <li><img src="img/beb-club.jpg" alt="Cerveza Club" loading="lazy"><span>Club</span></li>
+      <li><img src="img/beb-tropical.jpg" alt="Tropical" loading="lazy"><span>Tropical</span></li>
+      <li><img src="img/beb-manzana.jpg" alt="Manzana" loading="lazy"><span>Manzana</span></li>
+      <li><img src="img/beb-morocho.jpg" alt="Bebida de la casa" loading="lazy"><span>De la Casa</span></li>
+      <li><img src="img/beb-coca.jpg" alt="Coca-Cola" loading="lazy"><span>Coca-Cola</span></li>
+      <li><img src="img/beb-fanta.jpg" alt="Fanta" loading="lazy"><span>Fanta</span></li>
+      <li><img src="img/beb-sprite.jpg" alt="Sprite" loading="lazy"><span>Sprite</span></li>
+      <li><img src="img/beb-agua.jpg" alt="Agua" loading="lazy"><span>Agua</span></li>
+    </ul>
+  </section>
+
   <!-- ═══════════ TESTIMONIOS ═══════════ -->
   <section class="quotes reveal" aria-label="Opiniones de clientes">
-    <p class="section-kicker">Lo que dice la gente</p>
-    <h2 class="section-title section-title--centro">¡ASÍ SABE <span class="fancy">mi tierra!</span></h2>
+    <p class="section-kicker"><span class="tribars" aria-hidden="true"><i></i><i></i><i></i></span>Lo que dice la gente</p>
+    <h2 class="section-title section-title--centro">Así sabe <em>mi tierra</em></h2>
     <div class="quotes__slides" id="quoteSlides">
       <blockquote class="is-active"><p>"El encebollado me hizo llorar de la emoción. Igualito al del malecón de Guayaquil."</p><footer>— María F. ★★★★★</footer></blockquote>
-      <blockquote><p>"Por fin un bolón de verdad: crocante por fuera, lleno de chicharrón por dentro."</p><footer>— Carlos V. ★★★★★</footer></blockquote>
-      <blockquote><p>"El hornado se deshace solo. Mis hijos nacidos aquí ya piden 'mote con todo'."</p><footer>— Gabriela R. ★★★★★</footer></blockquote>
+      <blockquote><p>"La Bandera es un viaje a Ecuador sin pasaporte: guatita, ceviche y camarón en un solo plato."</p><footer>— Carlos V. ★★★★★</footer></blockquote>
+      <blockquote><p>"El ceviche con maní sabe a Manabí. Mis hijos nacidos aquí ya piden chifles con todo."</p><footer>— Gabriela R. ★★★★★</footer></blockquote>
     </div>
     <div class="quotes__dots" id="quoteDots" role="tablist" aria-label="Ir a la opinión"></div>
   </section>
@@ -293,8 +336,8 @@
   <section class="visit" id="visitanos">
     <div class="visit__inner reveal">
       <div class="visit__info">
-        <p class="section-kicker section-kicker--claro">Te esperamos</p>
-        <h2 class="section-title">VEN CON HAMBRE, <span class="fancy">sal con patria</span></h2>
+        <p class="section-kicker"><span class="tribars" aria-hidden="true"><i></i><i></i><i></i></span>Te esperamos</p>
+        <h2 class="section-title">Ven con hambre,<br><em>sal con patria</em></h2>
         <ul class="visit__details">
           <li>
             <span class="visit__icon">
@@ -306,7 +349,7 @@
             <span class="visit__icon">
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
             </span>
-            <div><strong>Horario</strong><span>Mié – Dom · 9:00 am – 8:00 pm</span></div>
+            <div><strong>Horario</strong><span>Mié – Dom · 9:00 am – 8:00 pm <em>(por confirmar)</em></span></div>
           </li>
           <li>
             <span class="visit__icon">
@@ -316,15 +359,15 @@
           </li>
         </ul>
         <div class="visit__cta">
-          <a class="btn btn--whatsapp btn--big" href="https://wa.me/18135550123?text=Hola%20EC%20Food%2C%20quiero%20ordenar" target="_blank" rel="noopener">
+          <a class="btn btn--whatsapp btn--big" href="https://wa.me/18135550123?text=Hola%20EC%20FOOD%2C%20quiero%20ordenar" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 .9-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5-.3.6-.6.8-.4 1.1.6 1.1 1.4 1.9 2.4 2.5.3.2.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.4 0 .1 0 .7-.2 1.3z"/></svg>
             Ordena por WhatsApp
           </a>
-          <a class="btn btn--borde btn--borde-claro" href="tel:+18135550123">Llámanos</a>
+          <a class="btn btn--linea" href="tel:+18135550123">Llámanos</a>
         </div>
       </div>
       <div class="visit__photo">
-        <img src="img/seco.jpg" alt="Seco de chivo servido con arroz amarillo" loading="lazy">
+        <img src="img/pescado-salsa.jpg" alt="Plato costeño de EC FOOD" loading="lazy">
       </div>
     </div>
   </section>
@@ -335,12 +378,8 @@
   <footer class="footer">
     <div class="footer__flag" aria-hidden="true"><i></i><i></i><i></i></div>
     <div class="footer__inner">
-      <a class="nav__logo" href="#inicio" aria-label="EC Food — volver arriba">
-        <span class="logo-mark" aria-hidden="true">EC</span>
-        <span class="logo-text">EC FOOD<em>¡sabor ecuatoriano!</em></span>
-      </a>
-      <p class="footer__note">© 2026 EC Food · Propuesta web por <strong>Rojo Agency</strong></p>
-      <p class="footer__credits">Fotografías: Wikimedia Commons (CC BY / CC BY-SA) — Ceibos, Pablo Jarrín, Vapelaez2212, amalavida.tv, Gary Soup, Kevinmero, BryanGuev13, Rinaldo Wurglitsch.</p>
+      <img class="footer__logo" src="img/logo.png" alt="EC FOOD — Authentic Ecuadorian Coastal Cuisine">
+      <p class="footer__note">© 2026 EC FOOD · Propuesta web por <strong>Rojo Agency</strong></p>
     </div>
   </footer>
 
