@@ -73,7 +73,7 @@ a{ color:inherit; text-decoration:none; }
   border-bottom:1px solid rgba(255,255,255,.08);
 }
 .nav.is-scrolled{ background:rgba(5,5,5,.96); }
-.nav__logoimg{ height:46px; width:auto; mix-blend-mode:screen; }
+.nav__logoimg{ height:52px; width:auto; mix-blend-mode:screen; }
 .nav__links{ display:flex; align-items:center; gap:clamp(.9rem,2.2vw,2.1rem); }
 .nav__links a:not(.btn){
   position:relative; padding:.3rem .1rem;
@@ -533,7 +533,7 @@ section{ padding:clamp(4rem,8vw,6.5rem) clamp(1.2rem,5vw,3rem); }
   padding:3rem clamp(1.2rem,5vw,3rem);
   display:flex; flex-direction:column; align-items:center; gap:1.3rem; text-align:center;
 }
-.footer__logo{ height:72px; width:auto; }
+.footer__logo{ height:96px; width:auto; }
 .footer__note{ color:var(--gris); font-weight:600; font-size:.95rem; }
 .footer__note strong{ color:var(--amarillo); }
 
@@ -585,7 +585,7 @@ section{ padding:clamp(4rem,8vw,6.5rem) clamp(1.2rem,5vw,3rem); }
   .sides__grid{ grid-template-columns:repeat(2,1fr); }
   .drinks__row{ grid-template-columns:repeat(2,1fr); }
   .hero__bar{ width:38px; }
-  .nav__logoimg{ height:38px; }
+  .nav__logoimg{ height:40px; }
 }
 
 /* ─────────── Reduced motion ─────────── */
