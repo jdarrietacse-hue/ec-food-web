@@ -1,6 +1,6 @@
 # EC FOOD — Authentic Ecuadorian Coastal Cuisine
 
-Sitio web de **EC FOOD** (comida ecuatoriana de la costa), hecho por **Rojo Agency**.
+Sitio web de **EC FOOD** (comida ecuatoriana de la costa), con fotografía y marca de **Nana López Studio** (nanalopez.com).
 Diseño v3 con la **marca oficial del cliente**: fondo negro, blanco y tricolor de la bandera (como el logo).
 
 Sitio estático (HTML + CSS + JS puro), en Vercel: **ecfood.vercel.app**
